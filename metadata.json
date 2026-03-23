@@ -1,0 +1,5 @@
+{
+  "name": "The Ugly Mug - Miles City's Favorite Coffee Spot",
+  "description": "High-converting website for The Ugly Mug coffee shop in Miles City, Montana, featuring specialty coffee, fresh baked goods, and a cozy atmosphere.",
+  "requestFramePermissions": ["geolocation"]
+}

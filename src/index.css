@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-coffee-dark: #3d2b1f;
+  --color-coffee-medium: #6f4e37;
+  --color-coffee-light: #c0a080;
+  --color-cream: #f5f5dc;
+  --color-sage: #8a9a5b;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-coffee-dark font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+}
+
+.btn-primary {
+  @apply bg-coffee-medium text-white px-6 py-3 rounded-full font-semibold hover:bg-coffee-dark transition-all transform hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center gap-2;
+}
+
+.btn-secondary {
+  @apply bg-sage text-white px-6 py-3 rounded-full font-semibold hover:bg-sage/90 transition-all transform hover:scale-105 active:scale-95 shadow-lg flex items-center justify-center gap-2;
+}
+
+.btn-outline {
+  @apply border-2 border-coffee-medium text-coffee-medium px-6 py-3 rounded-full font-semibold hover:bg-coffee-medium hover:text-white transition-all transform hover:scale-105 active:scale-95 flex items-center justify-center gap-2;
+}
